@@ -3,25 +3,23 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
 
-
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="Меню">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Просмотр словаря" />
-                  <MenuItem mnemonicParsing="false" text="Добавить слово" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Справка">
-            <items>
-              <MenuItem mnemonicParsing="false" text="О приложении" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </children>
-</FlowPane>
+<VBox prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.langapp.MainController">
+  <MenuBar xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <menus>
+      <Menu mnemonicParsing="false" text="Меню">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Просмотр словаря" onAction="#onAddNewWordBtnClicked" />
+          <MenuItem mnemonicParsing="false" text="Добавить слово" />
+               <MenuItem mnemonicParsing="false" text="Выход" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Справка">
+        <items>
+          <MenuItem mnemonicParsing="false" text="О приложении" />
+        </items>
+      </Menu>
+    </menus>
+  </MenuBar>
+</VBox>
