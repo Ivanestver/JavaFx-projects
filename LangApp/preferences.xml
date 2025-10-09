@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><db_creds><driver_path>com.mysql.cj.jdbc.Driver</driver_path><driver_prefix>jdbc:mysql</driver_prefix><dbtype>2</dbtype><database>test_db</database><login>user</login><password>user</password><host>localhost</host><port>3306</port></db_creds>
